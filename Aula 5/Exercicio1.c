@@ -10,8 +10,9 @@ int a[10][10];
 int b[10][10];
 int x,y,t;
 
-    for (t=1; t!=0;t++){
+    for(t=1; t!=0; t++){
 
+       printf("     %s%d\n\n","Montagen Randômica: ", t);
 
 
         for(x= 0;x<10; x++){
@@ -23,27 +24,29 @@ int x,y,t;
              }
         }
 
-        printf("%s %d \n\n","montagen randômica:",t);
+
         for(x= 0;x<10 ;x++){
             for(y=0; y<10 ; y++){
 
+
                 if((a[x][y]) == (b[x][y])){
-                    printf("%s %d %s %d %s %d \n","matriz a e b [",x,"][",y,"] são iguais a: ", b[x][y] );
+                    printf("%s%d%s"," ",b[x][y]," ");
                 }
 
                 else {
 
-                    printf("%s \n","- ");
+                    printf("%s"," - ");
 
 
                 };
 
             }
+           printf("\n");
 
         }
 
-     sleep(5);
-     system("clear");
+        sleep(5);
+        system("clear");
 
 
     }
